@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<group>
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:title="My Orders" />
+
+        <item
+            android:id="@+id/nav_food_i_like"
+            android:icon="@drawable/ic_restaurant_menu_black_24dp"
+            android:title="Food I Like" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:title="Logout" />
+
+    </group>
+
+    <item android:title="Application">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_shop_black_24dp"
+                android:title="Rate" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_message_black_24dp"
+                android:title="Feedback" />
+        </menu>
+    </item>-->
+</menu>

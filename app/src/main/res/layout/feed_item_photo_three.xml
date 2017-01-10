@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/card_margin"
+    android:layout_marginTop="@dimen/card_margin"
+    android:orientation="vertical"
+    android:id="@+id/lyt_photo_three"
+    android:visibility="gone">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/empty_photo"
+        android:scaleType="centerCrop"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:id="@+id/imageOne" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/empty_photo"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/imageTwo"
+            android:layout_weight="1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/empty_photo"
+                android:scaleType="centerCrop"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/imageThree"/>
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnExtraImage"
+                android:background="@color/black_overlay_dark"
+                android:text="+5"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_alignBottom="@id/imageThree"
+                android:layout_alignRight="@id/imageThree"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

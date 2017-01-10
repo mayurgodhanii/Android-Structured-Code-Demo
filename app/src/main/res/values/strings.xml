@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">CollegeApp</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Menu -->
+    <string name="action_notification">Notification</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_show_recent">Show Recent</string>
+    <string name="action_top_rated">Top Rated</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="action_hide">Hide</string>
+    <string name="action_report_abuse">Report Abuse</string>
+
+    <!-- Screen Titles -->
+    <string name="title_activity_feeds">CAMPUS FEEDS</string>
+    <string name="title_activity_login">LOGIN</string>
+    <string name="title_activity_feed_detail">FEED COMMENTS</string>
+    <string name="title_activity_add_feed">ADD FEED</string>
+    <string name="title_activity_registration">REGISTRATION</string>
+    <string name="title_activity_my_profile">MY PROFILE</string>
+    <string name="title_activity_user_profile">USER PROFILE</string>
+    <string name="title_activity_notifications">NOTIFICATIONS</string>
+    <string name="title_activity_change_password">CHANGE PASSWORD</string>
+    <string name="title_activity_forgot_password">FORGOT PASSWORD</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Sign In</string>
+    <string name="action_sign_up_short">Sign Up</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="txt_forgot_password">Forgot Password?</string>
+    <string name="txt_do_not_have_account">I don\'t have account | Sign Up</string>
+    <string name="txt_i_already_have_account">I already have my account | Sign In</string>
+    <string name="txt_hint_use_platform">How do you intend to use the platform?</string>
+    <string name="txt_hint_mentor">Mentor</string>
+    <string name="txt_hint_student">Student</string>
+    <string name="txt_hint_confirm_password">Confirm Password</string>
+    <string name="txt_hint_password">Password</string>
+    <string name="txt_hint_old_password">Old Password</string>
+    <string name="txt_hint_new_password">New Password</string>
+    <string name="txt_hint_phone">Phone #</string>
+    <string name="txt_hint_username">Username</string>
+    <string name="txt_hint_email">Email</string>
+    <string name="txt_hint_lastname">Lastname</string>
+    <string name="txt_hint_firstname">Firstname</string>
+    <string name="txt_hint_about">Describe your self</string>
+    <string name="txt_hint_about_view">Bio</string>
+    <string name="txt_hint_org">Organization</string>
+    <string name="txt_hint_class">Class/Section</string>
+    <string name="txt_hint_skills">Skills intrested by you</string>
+    <!-- ............ -->
+
+    <string name="no_network_connection_toast">No network connection found</string>
+
+
+    <!-- Feeds -->
+    <string name="enter_feed_text">Please Enter Text</string>
+    <string name="error_select_image">Error : Select other image!</string>
+    <string name="error_json_parsing">Json Parsing Exception</string>
+    <string name="error_dataset_rececived_null">Dataset is null</string>
+    <string name="error_status_message_tag_missing">Data Parsing Error : Status/Message tags are missing !</string>
+    <string name="txt_report_feed">You have reported a post. Admin will take required action on it.</string>
+    <string name="txt_no_comments">No Comments! Be the first to comment.</string>
+    <string name="txt_show_less">SHOW LESS</string>
+    <string name="txt_show_more">SHOW MORE</string>
+    <string name="txt_enter_comment">Please Enter Your Comment!</string>
+    <string name="txt_hint_add_feed_text">Type What You Think</string>
+    <string name="txt_hint_feed_link">Share Web Link</string>
+    <string name="txt_hint_feed_photos">Add Photos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="country">
+        <item>India</item>
+        <item>United States</item>
+        <item>Canada</item>
+        <item>Australia</item>
+        <item>United Kingdom</item>
+        <item>Philippines</item>
+        <item>Japan</item>
+        <item>Italy</item>
+        <item>Germany</item>
+        <item>Russia</item>
+        <item>Malaysia</item>
+        <item>France</item>
+        <item>Sweden</item>
+        <item>New Zealand</item>
+        <item>Singapore</item>
+    </string-array>
+
+</resources>

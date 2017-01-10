@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:id="@+id/cardViewAddComment"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:background="@color/black_overlay">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <dev.studentapp.view.component.edittext.EditTextOpenSansRegular
+                        android:id="@+id/edtComment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="4"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:hint="Write your comment"
+                        android:textSize="@dimen/font_size_6"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <dev.studentapp.view.component.button.ButtonOpenSansRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnComment"
+                    android:text="POST"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="bottom"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/white"
+                    android:onClick="addFeedComment"
+                    android:textSize="@dimen/font_size_6"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/cardViewAddComment"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:id="@+id/container"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/rclComments"
+                        tools:context=".view.feeds.feeddetail.FeedDetailActivity"
+                        tools:listitem="@layout/feed_item_comment_view"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"/>
+
+                    <dev.studentapp.view.component.textview.TextViewOpenSansRegular
+                        android:id="@+id/txtNoComments"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:text="@string/txt_no_comments"
+                        android:textColor="@color/text_black"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:textSize="@dimen/font_size_5"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

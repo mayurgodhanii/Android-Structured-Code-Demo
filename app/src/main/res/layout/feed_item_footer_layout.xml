@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:id="@+id/lyt_btns">
+
+        <dev.studentapp.view.component.button.ButtonOpenSansSemiBold
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:text="10 Likes"
+            android:id="@+id/btn_txt_like"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/font_size_3"/>
+
+        <dev.studentapp.view.component.button.ButtonOpenSansSemiBold
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:text="10 Dislikes"
+            android:id="@+id/btn_txt_dislike"
+            android:visibility="gone"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/font_size_3"/>
+
+        <dev.studentapp.view.component.button.ButtonOpenSansSemiBold
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:text="10 Comments"
+            android:paddingLeft="15dp"
+            android:id="@+id/btn_txt_comment"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/font_size_3"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_font_light"
+        android:layout_marginTop="5dp"
+        android:id="@+id/line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/lyt_img_btns"
+        android:gravity="right">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_thumb_up_black_24dp"
+            android:layout_marginRight="25dp"
+            android:id="@+id/btn_img_like"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_thumb_down_black_24dp"
+            android:layout_marginRight="25dp"
+            android:id="@+id/btn_img_dislike"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_comment_black_24dp"
+            android:layout_marginRight="8dp"
+            android:id="@+id/btn_img_comment"/>
+
+    </LinearLayout>
+
+</LinearLayout>
